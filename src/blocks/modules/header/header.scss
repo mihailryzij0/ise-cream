@@ -1,0 +1,68 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    &-item{
+        display: flex;
+        align-items: center;
+    }
+
+}
+.nav{
+    display: flex;
+    margin-left: 80px;
+    @media (max-width:830px) {
+        display: none;
+    }
+    &-item{
+        list-style-type: none;
+        margin-left: 40px;
+        &__link{
+            text-decoration: none;
+            color: rgba($gray, $alpha);
+            font-family: 'Roboto', sans-serif;
+            line-height: 1rem;
+            font-size: 0.87rem;
+            transition: 0.2s ease;
+            &:hover{
+                color: $pink;
+            }
+
+        }
+    }
+}
+.logo-polar{
+    width: 79px;
+    height: 79px;
+    background-image: url(../../../img/logo-polar.png);
+    background-repeat: no-repeat;
+}
+.header-button{
+    padding: 14px 50px;
+    text-decoration: none;
+    color: $whit;
+    line-height: 1.37rem;
+    @media (max-width:500px) {
+        display: none;
+    }
+}
+.mobil-menu{
+    @media (min-width:831px) {
+        display: none;
+    }
+    @media (max-width:830px) {
+        width: 49px;
+        height: 47px;
+        background-image: url(../../../img/svg/menu-burger.svg);
+        background-repeat: no-repeat;
+        background-color: transparent !important;
+        margin-right: 40px;
+    }
+    @media (max-width:500px) {
+        margin-right: 0;
+    }
+}
